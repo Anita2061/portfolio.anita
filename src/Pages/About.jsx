@@ -1,5 +1,5 @@
 import React from 'react';
-import Anita from '../assets/anita.jpg';
+import Anita from '../assets/Anita.jpg';
 
 
 

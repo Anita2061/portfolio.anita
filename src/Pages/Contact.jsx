@@ -25,7 +25,7 @@ const Contact = () => {
 
           <div className="space-y-5">
             <div className="space-y-2">
-              <label htmlFor="name" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
+              <label htmlFor="name" className="block text-sm font-semibold  dark:text-slate-200">
                 Name
               </label>
               <input
@@ -40,7 +40,7 @@ const Contact = () => {
 
             <div className="space-y-2">
               <form action="https://formsubmit.co/your@email.com" method="POST">
-              <label htmlFor="email-address" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
+              <label htmlFor="email-address" className="block text-sm font-semibold  dark:text-slate-200">
                 Email
               </label></form>
               <input
@@ -55,7 +55,7 @@ const Contact = () => {
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="message" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
+              <label htmlFor="message" className="block text-sm font-semibold  dark:text-slate-200">
                 Message
               </label>
               <textarea

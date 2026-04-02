@@ -1,0 +1,18 @@
+Anita Gyawali Portfolio
+
+Role: MERN Stack Developer
+
+Summary:
+I build responsive web applications using MongoDB, Express, React, and Node.js.
+I focus on clean UI, practical functionality, and maintainable code.
+
+Skills:
+- React
+- Node.js
+- Express.js
+- MongoDB
+- JavaScript
+- Tailwind CSS
+
+Contact:
+Please use the contact form on my portfolio website.

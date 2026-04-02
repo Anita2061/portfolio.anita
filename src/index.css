@@ -1,1 +1,63 @@
 @import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Dark mode overrides for existing utility-based layout without changing page content */
+.dark body {
+  background-color: #020617;
+  color: #e2e8f0;
+}
+
+.dark .bg-slate-50,
+.dark .bg-gray-50 {
+  background-color: #020617 !important;
+}
+
+.dark .bg-white {
+  background-color: #0f172a !important;
+}
+
+.dark .bg-slate-900 {
+  background-color: #020617 !important;
+}
+
+.dark .text-slate-900,
+.dark .text-gray-900,
+.dark .text-gray-950 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-slate-700,
+.dark .text-gray-700,
+.dark .text-slate-600,
+.dark .text-gray-600,
+.dark .text-slate-500,
+.dark .text-gray-500 {
+  color: #cbd5e1 !important;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-gray-100,
+.dark .border-gray-200,
+.dark .border-slate-800,
+.dark .border-slate-800\/50,
+.dark .border-slate-800\/60 {
+  border-color: #334155 !important;
+}
+
+.dark input,
+.dark textarea {
+  background-color: #0b1220 !important;
+  color: #f8fafc !important;
+}

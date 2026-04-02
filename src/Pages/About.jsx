@@ -32,8 +32,7 @@ const About = () => {
                 My tech journey started because I always wanted to know how websites were made.
               </p>
               <p>
-                I work with the MERN Stack (MongoDB, Express, React, and Node.js). This means I can build a whole website from start to finish. I enjoy creating 
-                everything from small, simple websites to larger, complex systems.
+                I work with the MERN Stack (MongoDB, Express, React, and Node.js). This means I can build a whole website from start to finish. 
                My favorite part is taking a flat design and turning it into a real, responsive website that works beautifully. I primarily use Tailwind CSS and JavaScript to make this happen.       
               </p>
               
@@ -43,7 +42,7 @@ const About = () => {
           {/* Column 2: The Main Event - Your Photo */}
           <div className="order-1 md:order-2 flex justify-center md:justify-end relative group">
             {/* Image Circle */}
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-orange-500 shadow-2xl overflow-hidden scale-100 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-blue-400 shadow-2xl overflow-hidden scale-100 group-hover:scale-105 transition-transform duration-300">
               <img 
                 src={Anita} 
                 alt="" className="w-full h-full object-cover" 
@@ -76,12 +75,16 @@ const About = () => {
             </div>
             
             {/* New CTA: Download Resume */}
-            <button className="mt-8 w-full bg-blue-600 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow hover:bg-blue-700 transition duration-300 flex items-center justify-center gap-2">
+            <a
+              href="/Anita-Gyawali-Portfolio.txt"
+              download
+              className="mt-8 w-full bg-blue-600 text-white text-lg font-semibold py-3 px-6 rounded-lg shadow hover:bg-blue-700 transition duration-300 flex items-center justify-center gap-2"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
               </svg>
                Download My Resume
-            </button>
+            </a>
           </div>
 
         </div>

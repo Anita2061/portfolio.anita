@@ -20,7 +20,7 @@ const Home = () => {
           
         </p>
         <div className="flex gap-4">
-          <Link to="/projects" className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition shadow-lg">
+          <Link to="/projects" className="border-2 border-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition">
             View Projects
           </Link>
           <Link to="/skills" className="border-2 border-slate-900 px-8 py-3 rounded-full font-semibold hover:bg-slate-900 hover:text-white transition">

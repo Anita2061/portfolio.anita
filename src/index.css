@@ -12,6 +12,31 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@keyframes blob {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(0, -10px, 0) scale(1.04);
+  }
+  66% {
+    transform: translate3d(8px, 6px, 0) scale(0.98);
+  }
+}
+
+.animate-blob {
+  animation: blob 8s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
 /* Dark mode overrides for existing utility-based layout without changing page content */
 .dark body {
   background-color: #020617;

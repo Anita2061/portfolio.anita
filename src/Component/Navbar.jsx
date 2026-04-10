@@ -6,7 +6,7 @@ const Navbar = ({ theme, onToggleTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-900 text-white sticky top-0 z-50">
+    <nav className="bg-slate-600 text-white sticky top-0 z-50">
       <div className="flex items-center justify-between px-4 sm:px-8 py-4">
         <div className="text-2xl font-bold tracking-tighter">PORTFOLIO</div>
 

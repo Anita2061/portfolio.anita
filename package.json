@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "package-offline": "powershell -ExecutionPolicy Bypass -File ./scripts/package-offline.ps1",
+    "generate-offline-html": "powershell -ExecutionPolicy Bypass -File ./scripts/generate-offline-html.ps1",
+    "build:offline": "npm run build && npm run package-offline",
     "lint": "eslint .",
     "preview": "vite preview"
   },

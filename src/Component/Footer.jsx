@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="space-y-2.5 text-sm">
               <li><Link to="/" className="hover:text-blue-400 transition-colors py-1 inline-block">Home</Link></li>
               <li><Link to="/about" className="hover:text-blue-400 transition-colors py-1 inline-block">About</Link></li>
-              <li><Link to="/Skills" className="hover:text-blue-400 transition-colors py-1 inline-block">Skills</Link></li>
+              <li><Link to="/skills" className="hover:text-blue-400 transition-colors py-1 inline-block">Skills</Link></li>
               <li><Link to="/projects" className="hover:text-blue-400 transition-colors py-1 inline-block">Projects</Link></li>
             </ul>
           </div>
@@ -80,7 +80,7 @@ const Footer = () => {
             <h3 className="text-white font-bold mb-2">Have a project?</h3>
             <p className="text-xs text-slate-500 mb-4">Let's discuss how we can work together to build something amazing.</p>
             
-            <Link to="/Contact" className="inline-block w-full text-center bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold py-2.5 px-4 rounded-lg transition-all">
+            <Link to="/contact" className="inline-block w-full text-center bg-blue-600 hover:bg-blue-500 text-white text-sm font-bold py-2.5 px-4 rounded-lg transition-all">
               Send Message
             </Link>
           </div>

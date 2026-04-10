@@ -1,54 +1,67 @@
 import React from 'react';
 
-
-
 const Skills = () => {
-  const skillsData = [
-    { name: "React.jsx ", color: "bg-blue-500" },
-    { name: "Tailwind CSS",  color: "bg-cyan-400" },
-    { name: "JavaScript",  color: "bg-yellow-400" },
-    { name: "Digital Marketing",  color: "bg-purple-500" },
-    { name: "Python",  color: "bg-pink-500" },
-    { name: "Node.js",  color: "bg-green-500" },
+  const skills = [
+    { name: "React", icon: "devicon-react-original" },
+    { name: "Node.js", icon: "devicon-nodejs-plain-wordmark" },
+    { name: "JavaScript", icon: "devicon-javascript-plain" },
+    { name: "Tailwind", icon: "devicon-tailwindcss-original" }, // or "devicon-tailwindcss-plain"
+    { name: "Python", icon: "devicon-python-plain" },
+    { name: "MongoDB", icon: "devicon-mongodb-plain" },
+    { name: "Express", icon: "devicon-express-original" },
+    { name: "GitHub", icon: "devicon-github-original" },
+    {name: "Digital Marketing", icon: "devicon-google-plain"},
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-20">
+    <section className="py-20 bg-slate-50 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4">
+        
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900">Technical <span className="text-blue-600">Skills</span></h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+          <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight">
+            My  <span className="text-blue-600">Skills</span>
+          </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
-          {skillsData.map((skill, index) => (
-            <div key={index} className="space-y-2">
-              <div className="flex justify-between items-center">
-                <span className="font-bold text-gray-700">{skill.name}</span>
-                <span className="text-sm font-medium text-gray-500">{skill.level}</span>
+        {/* Attractive Icon Grid */}
+        <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+          {skills.map((skill, index) => (
+            <div 
+              key={index}
+              className="group relative flex flex-col items-center justify-center"
+            >
+              {/* Floating Animation & Glass Effect */}
+              <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-3xl shadow-sm border border-slate-100 
+                            flex items-center justify-center text-5xl md:text-6xl
+                            transition-all duration-500 ease-in-out
+                            group-hover:-translate-y-4 group-hover:shadow-2xl group-hover:shadow-blue-200
+                            group-hover:border-blue-400 group-hover:rotate-6">
+                
+                <i className={`${skill.icon} colored transition-all duration-500 group-hover:scale-110`}></i>
+                
+                {/* Decorative Glow behind icon */}
+                <div className="absolute inset-0 bg-blue-400 opacity-0 group-hover:opacity-10 blur-xl rounded-full transition-opacity"></div>
               </div>
-              
-              {/* Outer Bar */}
-              <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                {/* Inner Animated Bar */}
-                <div 
-                  className={`${skill.color} h-full rounded-full transition-all duration-1000 ease-out`}
-                  style={{ width: skill.level }}
-                ></div>
-              </div>
+
+              {/* Skill Name Tag */}
+              <span className="mt-4 text-sm font-bold text-slate-400 group-hover:text-blue-600 transition-colors uppercase tracking-widest">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>
         
-        {/* Decorative Tech Icons Row */}
-        <div className="mt-20 flex flex-wrap justify-center gap-8 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-          <i className="devicon-react-original colored text-5xl"></i>
-          <i className="devicon-tailwindcss-plain colored text-5xl"></i>
-          <i className="devicon-javascript-plain colored text-5xl"></i>
-          <i className="devicon-photoshop-plain colored text-5xl"></i>
-        </div>
-        
       </div>
+
+      {/* Optional: Add this CSS to your global CSS for the float effect */}
+      <style dangerouslySetInnerHTML={{ __html: `
+        @keyframes float {
+          0% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+          100% { transform: translateY(0px); }
+        }
+        .float-icon { animation: float 3s ease-in-out infinite; }
+      `}} />
     </section>
   );
 };

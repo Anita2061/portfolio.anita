@@ -32,22 +32,27 @@ const Project = () => {
               
 
               {/* Project Details */}
-              <div className="p-6">
-                <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
-                  {project.tech}
-                </span>
-                <h3 className="text-xl font-bold text-gray-900 mt-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 text-sm mt-3 leading-relaxed">
-                  {project.description}
-                </p>
+              <div className="p-6 flex flex-col h-full">
+  {/* 1. Title at the Top */}
+  <h3 className="text-xl font-bold text-slate-900 mb-2">
+    Product Management System
+  </h3>
 
-                {/* Simple Button */}
-                <button className="mt-6 w-full py-2 px-4 border border-blue-600 text-blue-600 font-semibold rounded hover:bg-blue-600 hover:text-white transition-colors duration-300">
-                  View Project
-                </button>
-              </div>
+  {/* 2. Description in the Middle */}
+  <p className="text-slate-600 mb-6 flex-grow">
+    Website where we can buy anything we want.
+  </p>
+
+  {/* 3. View Project Button at the Bottom */}
+  <a
+    href="https://frontend-git-main-anita2061s-projects.vercel.app/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full inline-flex items-center justify-center px-6 py-2 border-2 border-blue-500 text-blue-500 font-semibold rounded-md hover:bg-blue-500 hover:text-white transition-all duration-300"
+  >
+    View Project
+  </a>
+</div>
             </div>
           ))}
         </div>

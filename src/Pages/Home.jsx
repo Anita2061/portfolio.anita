@@ -10,27 +10,25 @@ const Home = () => {
       <section className="relative overflow-hidden pb-24 pt-12 sm:pt-16 lg:pt-20">
         <div className="pointer-events-none absolute left-1/2 top-1/2 -z-10 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-100/80 blur-[110px] sm:h-[520px] sm:w-[520px]" />
 
-        <div className=" mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12">
-          <div className="order-2 space-y-7 text-left lg:order-1">
-            
-
-            <h1 className="text-4xl font-black  text-slate-900 ">
+        <div className="mx-auto flex max-w-4xl flex-col items-center text-center gap-10 px-4 sm:px-6">
+          <div className="space-y-7">
+            <h1 className="text-4xl font-black text-slate-900 sm:text-5xl lg:text-6xl">
               MERN Stack{' '}
               <span className="bg-gradient-to-r from-blue-600 to-indigo-500 bg-clip-text text-transparent">
                 Developer
               </span>
             </h1>
 
-            <p className="max-w-xl text-lg leading-relaxed text-slate-600 sm:text-xl">
+            <p className="max-w-2xl mx-auto text-lg leading-relaxed text-slate-600 sm:text-xl">
               I&apos;m{' '}
-              <span className="font-bold text-slate-900  decoration-4 ">
+              <span className="font-bold text-slate-900 decoration-4">
                 Anita Gyawali
               </span>
               , a MERN Stack Developer building fast, polished web applications that combine clean code with thoughtful
               user experience.
             </p>
 
-            <div className="flex flex-wrap gap-4 pt-2 sm:gap-5 sm:pt-4">
+            <div className="flex flex-wrap justify-center gap-4 pt-2 sm:gap-5 sm:pt-4">
               <Link
                 to="/projects"
                 className="rounded-2xl bg-slate-900 px-8 py-4 font-bold text-white transition-all hover:-translate-y-1 hover:bg-blue-600 active:scale-95"
@@ -45,11 +43,6 @@ const Home = () => {
               </Link>
             </div>
           </div>
-
-          <div className="order-1 relative flex justify-center lg:order-2 lg:justify-end">
-            <div className="relative w-full max-w-[320px] sm:max-w-[420px]">
-            </div>
-          </div>
         </div>
       </section>
       {/* Feature Section */}
@@ -62,13 +55,11 @@ const Home = () => {
 
           <h3 className="text-xl font-bold mb-2">Fast Performance</h3>
 
-          <p className="text-slate-500"><p className=" font-bold text-blue-600">Optimized for Speed and Efficiency.</p>
-
-          I don't just write code, I write code that performs. By using efficient state management, optimizing images,
-
+          <p className="text-slate-500">
+            <span className="block font-bold text-blue-600 mb-2">Optimized for Speed and Efficiency.</span>
+            I don't just write code, I write code that performs. By using efficient state management, optimizing images,
             and writing clean backend queries, I ensure your application loads instantly.
-
-            </p>
+          </p>
 
         </div>
 
@@ -78,13 +69,11 @@ const Home = () => {
 
           <h3 className="text-xl font-bold mb-2">Responsive Design</h3>
 
-          <p className="text-slate-500"><p className=" font-bold text-blue-600">A Seamless Experience on Every Screen.</p>
-
-                   In today’s mobile-first world, your website needs to look stunning everywhere. I build fully responsive layouts using Tailwind CSS that
-
-                   adapt perfectly to any screen size.
-
-                  </p>
+          <p className="text-slate-500">
+            <span className="block font-bold text-blue-600 mb-2">A Seamless Experience on Every Screen.</span>
+            In today’s mobile-first world, your website needs to look stunning everywhere. I build fully responsive layouts using Tailwind CSS that
+            adapt perfectly to any screen size.
+          </p>
 
         </div>
 
@@ -94,11 +83,10 @@ const Home = () => {
 
           <h3 className="text-xl font-bold mb-2">Modern Tech</h3>
 
-          <p className="text-slate-500"><p className=" font-bold text-blue-600">Built with the Latest Industry Standards.</p>
-
-                   I build applications that are not only
-
-                   powerful and secure but also easy to scale and maintain as your project grows.</p>
+          <p className="text-slate-500">
+            <span className="block font-bold text-blue-600 mb-2">Built with the Latest Industry Standards.</span>
+            I build applications that are not only powerful and secure but also easy to scale and maintain as your project grows.
+          </p>
 
         </div>
 
